@@ -1,0 +1,4 @@
+GET       /posts                                   controllers.PostController.list
+POST      /posts/create                            controllers.PostController.create
+GET       /posts/:post_id/comments                 controllers.CommentController.comment_list(post_id: String)
+POST      /posts/:post_id/comments/create          controllers.CommentController.comment_create(post_id: String)
